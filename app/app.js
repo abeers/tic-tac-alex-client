@@ -5,5 +5,7 @@
 // require('./example')
 
 $(() => {
-  // your JS code goes here
+  $('#the-button').on('click', () => {
+    $('#the-display').text(`This project is a ${Math.floor(Math.random() * 100)} out of 100`)
+  })
 })
