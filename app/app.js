@@ -6,9 +6,8 @@ const gameApi = require('./game/api.js')
 // require('./example')
 
 $(() => {
-  $('#the-button').on('click', () => {
+  $('#the-button').on('click', function () {
     $('#the-display').text(`This project is a ${Math.floor(Math.random() * 100)} out of 100`)
-
-    gameApi.getGames()
   })
+  $('#the-other-button').on('click', gameApi.getGames)
 })
