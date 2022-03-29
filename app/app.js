@@ -10,4 +10,5 @@ $(() => {
     $('#the-display').text(`This project is a ${Math.floor(Math.random() * 100)} out of 100`)
   })
   $('#the-other-button').on('click', gameApi.getGames)
+  $('#another-button').on('click', gameApi.signUp)
 })
